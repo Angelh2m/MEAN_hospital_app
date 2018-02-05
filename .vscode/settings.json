@@ -1,2 +1,14 @@
 {
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [{
+        "scope": "punctuation",
+        "settings": {
+            // "foreground": "#ffffff"
+        }
+    }],
+      // "editorGutter.addedBackground": "#333",
+      // "editorGutter.deletedBackground": "#333",
+      // "editorGutter.modifiedBackground": "#333",
+      // "editor.background": "#333",
+  }
 }

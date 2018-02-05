@@ -16,11 +16,13 @@ declare const gapi: any;
 export class LoginComponent implements OnInit {
   recuerdame = false;
   email: string;
+  auth2: any;
 
   constructor(
 
     public router: Router,
     public _usuarioService: UsuarioService
+
   ) {}
 
   ngOnInit() {
