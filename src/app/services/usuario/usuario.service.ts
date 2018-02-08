@@ -8,7 +8,7 @@ import { SubirArchivoService } from '../subir-archivo/subir-archivo.service';
 
 // import * as swal from 'sweetalert';
 
-declare var swal: any;
+// declare var swal: any;
 
 
 

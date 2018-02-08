@@ -28,33 +28,47 @@ export class ImagesPipe implements PipeTransform {
       return count[count.length - 1];
     }
 
-    // console.log(car(x));
 
-    if ( tipo === 'usuario') {
+
+
+    if (tipo === 'usuario') {
+      // console.log(lastSegment(img + 'THere is an imagge'));
+
       return url += '/usuarios/' + lastSegment(img);
     }
 
-    switch ( tipo ) {
+    // http://localhost:3000/img/hospitales/5a7b1ae8c9cfc3360ed2a1eb-224.jpg
 
-      case 'usuarios':
-        url += '/usuarios/' + lastSegment(img);
-      break;
 
-      case 'usuario':
-        url += '/usuarios/' + lastSegment(img);
-      break;
-
-      case 'medico':
-        url += '/medicos/' + img;
-      break;
-
-      case 'hospital':
-        url += '/hospital/' + img;
-      break;
-
-      default:
-        url += '/usuarios/xxx';
+    if (tipo === 'hospital') {
+      return url += '/hospitales/' + lastSegment(img);
     }
+
+    if (tipo === 'medico') {
+      return url += '/medicos/' + lastSegment(img);
+    }
+
+    // switch ( tipo ) {
+
+    //   case 'usuarios':
+    //     url += '/usuarios/' + lastSegment(img);
+    //   break;
+
+    //   case 'usuario':
+    //     url += '/usuarios/' + lastSegment(img);
+    //   break;
+
+    //   case 'medico':
+    //     url += '/medicos/' + img;
+    //   break;
+
+    //   case 'hospital':
+    //     url += '/hospitales/' + img;
+    //   break;
+
+    //   default:
+    //     url += '/usuarios/xxx';
+    // }
 
 
     return  ;
